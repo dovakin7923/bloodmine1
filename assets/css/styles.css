@@ -8,7 +8,6 @@ html {
 
 body {
     margin: 0;
-    min-width: 1100px;
     color: #fff5e8;
     background: #1e1006;
     font-family: "Trebuchet MS", Arial, sans-serif;
@@ -28,7 +27,8 @@ button {
 }
 
 .wrap {
-    width: 1040px;
+    width: 100%;
+    max-width: 1040px;
     margin: 0 auto;
 }
 
@@ -88,7 +88,7 @@ button {
 }
 
 .header-note {
-    color: #6c523f;
+    color: #8f7c6d;
     font-size: 10px;
 }
 
@@ -100,7 +100,8 @@ button {
 }
 
 .hero-copy {
-    width: 500px;
+    width: 100%;
+    max-width: 500px;
     position: relative;
     z-index: 1;
 }
@@ -112,24 +113,25 @@ button {
     letter-spacing: 1.6px;
 }
 
-h2 {
+h1, h2 {
     font-size: 32px;
     line-height: 1.08;
     margin: 18px 0;
     font-weight: 900;
 }
 
-.hero h2 {
+.hero h1 {
     font-size: 40px;
     letter-spacing: -.8px;
 }
 
-.hero h2 span {
+.hero h1 span {
     color: #fff7e8;
 }
 
 .hero p {
-    width: 390px;
+    width: 100%;
+    max-width: 390px;
     font-size: 13px;
     line-height: 1.6;
     color: #ae9584;
@@ -160,7 +162,8 @@ h2 {
 }
 
 .hero-button {
-    width: 345px;
+    width: 100%;
+    max-width: 345px;
     margin-top: 15px;
 }
 
@@ -183,13 +186,13 @@ h2 {
     font-weight: bold;
 }
 
-.section-title h2 {
+.section-title h1, .section-title h2 {
     margin: 14px 0 10px;
     font-size: 30px;
 }
 
 .section-title p {
-    color: #8a6f5a;
+    color: #937b67;
     font-size: 11px;
 }
 
@@ -198,7 +201,8 @@ h2 {
 }
 
 .store {
-    width: 918px;
+    width: 100%;
+    max-width: 918px;
     margin: auto;
     padding: 18px;
     border-radius: 20px;
@@ -216,7 +220,7 @@ h2 {
     padding: 8px 14px;
     font-size: 13px;
     cursor: pointer;
-    color: #8a7464;
+    color: #8e7869;
     border-radius: 7px;
 }
 
@@ -238,12 +242,12 @@ h2 {
     overflow: hidden;
 }
 
-h4 {
+.title-sm {
     margin: 16px 0;
     font-size: 17px;
 }
 
-.store-preview h4 {
+.store-preview .title-sm {
     font-size: 15px;
 }
 
@@ -302,7 +306,7 @@ h4 {
     border-radius: 10px;
 }
 
-.description-column h4 {
+.description-column .title-sm {
     margin: 25px 20px 12px;
     font-size: 17px;
 }
@@ -321,7 +325,7 @@ h4 {
 
 .term-label {
     font-size: 10px;
-    color: #775e4b;
+    color: #8f7b6b;
     margin: 15px 20px 8px;
 }
 
@@ -330,10 +334,10 @@ h4 {
     gap: 10px;
     font-size: 10px;
     margin: 0 20px 17px;
-    color: #826953;
+    color: #917b68;
 }
 
-.terms span {
+.terms button {
     padding: 7px 10px;
     border-radius: 5px;
     cursor: pointer;
@@ -347,11 +351,11 @@ h4 {
 .description-column .orange {
     display: block;
     margin: 0 20px;
-    width: 350px;
+    width: calc(100% - 40px);
 }
 
 .fineprint {
-    color: #5c402c;
+    color: #8f7b6d;
     font-size: 9px;
     text-align: center;
     margin: 12px 0 0;
@@ -383,7 +387,7 @@ h4 {
     padding: 20px;
 }
 
-.news-copy h4 {
+.news-copy .title-sm {
     font-size: 18px;
 }
 
@@ -414,7 +418,7 @@ h4 {
 }
 
 .about p {
-    color: #765c46;
+    color: #917d6b;
     font-size: 11px;
     line-height: 1.7;
 }
@@ -443,7 +447,7 @@ h4 {
 }
 
 .footer p {
-    color: #614a38;
+    color: #8c7b6e;
     font-size: 9px;
     margin: 9px 0;
 }
@@ -461,12 +465,14 @@ h4 {
     color: #a58b76;
     font-size: 12px;
     margin: auto auto 25px;
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     line-height: 1.8;
 }
 
 .rules-list {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: auto;
 }
 
@@ -503,7 +509,8 @@ h4 {
 }
 
 .bottom-help {
-    width: 800px;
+    width: 100%;
+    max-width: 800px;
     margin: 45px auto;
     padding: 25px;
     background: #261407;
@@ -547,13 +554,13 @@ h4 {
     margin: auto;
 }
 
-.reward-card h4 {
+.reward-card .title-sm {
     margin: 3px 0 10px;
 }
 
 .reward-card p {
     font-size: 11px;
-    color: #6d3219;
+    color: #260c03;
     min-height: 30px;
 }
 
@@ -592,7 +599,8 @@ h4 {
 }
 
 .guide-steps {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
 }
 
 .guide-step {
@@ -607,7 +615,7 @@ h4 {
     font-size: 11px;
 }
 
-.guide-step h4 {
+.guide-step .title-sm {
     margin: 10px 0;
 }
 
@@ -624,7 +632,7 @@ h4 {
 
 .guide-player {
     width: 250px;
-    height: 375px;
+    height: auto;
     margin-top: 35px;
 }
 
@@ -675,48 +683,52 @@ h4 {
 }
 
 .article-page {
-    width: 850px;
+    width: 100%;
+    max-width: 850px;
     padding: 30px 0;
 }
 
 .breadcrumbs {
-    color: #886c54;
+    color: #937963;
     font-size: 11px;
     margin: 0 0 35px;
 }
 
-.article-page h2 {
+.article-page h1 {
     font-size: 38px;
     margin: 20px 0;
 }
 
 .article-meta {
-    color: #71553f;
+    color: #907a69;
     font-size: 10px;
 }
 
 .article-cover {
-    width: 850px;
+    width: 100%;
+    height: auto;
     border-radius: 12px;
     margin-top: 20px;
 }
 
 .article-body {
-    width: 730px;
+    width: 100%;
+    max-width: 730px;
     margin: 30px auto;
     font-size: 14px;
     line-height: 1.9;
     color: #b99d85;
 }
 
-.article-body h4 {
+.article-body .title-sm {
     color: #fff1df;
     font-size: 22px;
     margin-top: 32px;
 }
 
 .article-body img {
-    width: 730px;
+    width: 100%;
+    height: auto;
     margin: 20px 0;
 }
 
@@ -742,7 +754,8 @@ h4 {
 }
 
 .modal {
-    width: 470px;
+    width: calc(100% - 32px);
+    max-width: 470px;
     padding: 40px;
     border-radius: 15px;
     background: #2b180c;
@@ -810,4 +823,342 @@ h4 {
     width: 300px;
     max-height: 300px;
     object-fit: contain;
+}
+
+
+/* ===================== правки после аудита ===================== */
+
+/* доступность */
+.skip-link {
+    position: absolute;
+    left: -9999px;
+    top: 0;
+    z-index: 60;
+    padding: 10px 14px;
+    background: #fff7db;
+    color: #cb5a02;
+    border-radius: 0 0 8px 0;
+}
+
+.skip-link:focus {
+    left: 0;
+}
+
+:focus-visible {
+    outline: 2px solid #ffb11a;
+    outline-offset: 2px;
+}
+
+.tab {
+    background: transparent;
+    font-family: inherit;
+}
+
+.terms button {
+    background: transparent;
+    font-family: inherit;
+    font-size: 12px;
+    color: inherit;
+}
+
+.product-row {
+    width: 100%;
+    border: 0;
+    color: inherit;
+    text-align: left;
+    font-family: inherit;
+}
+
+.rule-heading {
+    width: 100%;
+    border: 0;
+    background: transparent;
+    color: inherit;
+    text-align: left;
+    font-family: inherit;
+}
+
+.modal-close {
+    background: transparent;
+    border: 0;
+    line-height: 1;
+    padding: 4px 8px;
+}
+
+.title-sm {
+    font-weight: bold;
+    line-height: normal;
+}
+
+.news-card:hover,
+.reward-card:hover {
+    box-shadow: 0 0 16px #ff5a0026;
+}
+
+img {
+    max-width: 100%;
+}
+
+/* планшет и узкий десктоп */
+@media (max-width: 1072px) {
+    .wrap,
+    .inner-page {
+        padding-left: 16px;
+        padding-right: 16px;
+    }
+
+    .hero {
+        overflow: hidden;
+    }
+}
+
+/* планшет и телефон */
+@media (max-width: 900px) {
+    body {
+        font-size: 16px;
+    }
+
+    .header {
+        height: auto;
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 12px;
+        padding-top: 14px;
+        padding-bottom: 14px;
+    }
+
+    .nav {
+        flex-wrap: wrap;
+        width: 100%;
+    }
+
+    .nav a {
+        font-size: 14px;
+        padding: 10px 12px;
+    }
+
+    .header-note {
+        display: none;
+    }
+
+    .hero {
+        height: auto;
+        flex-direction: column;
+        align-items: stretch;
+        padding-top: 10px;
+    }
+
+    .hero-copy,
+    .hero p,
+    .hero-button {
+        max-width: none;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+
+    .hero p {
+        font-size: 15px;
+    }
+
+    .hero-button span {
+        margin-left: 48px;
+    }
+
+    .hero-players {
+        position: relative;
+        left: auto;
+        top: auto;
+        width: 100%;
+        height: 300px;
+        margin-top: 10px;
+    }
+
+    .hero-back {
+        left: 0;
+        top: 40px;
+        height: 240px;
+    }
+
+    .hero-front {
+        left: auto;
+        right: 8%;
+        top: 0;
+        height: 290px;
+    }
+
+    .store {
+        padding: 12px;
+    }
+
+    .tabs {
+        margin: 0 0 16px;
+        flex-wrap: wrap;
+    }
+
+    .store-body {
+        flex-direction: column;
+    }
+
+    .store-preview,
+    .product-column,
+    .description-column {
+        width: 100%;
+    }
+
+    .store-preview img {
+        display: block;
+        width: auto;
+        max-width: 100%;
+        max-height: 220px;
+        margin: 0 auto;
+    }
+
+    .news-grid,
+    .rewards-grid {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .inner-page {
+        min-height: 0;
+    }
+
+    .guide-layout {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .guide-player {
+        align-self: center;
+        margin-top: 0;
+    }
+
+    .news-wide {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 16px;
+    }
+
+    .news-wide > img {
+        width: 100%;
+        max-width: 300px;
+    }
+
+    .reward-banner {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 20px;
+        padding: 20px;
+    }
+
+    .footer {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 16px;
+        padding: 32px 16px;
+    }
+
+    .footer-links {
+        flex-wrap: wrap;
+        gap: 12px 20px;
+    }
+
+    .article-body {
+        font-size: 16px;
+    }
+
+    /* минимальные размеры текста: не мельче 14px */
+    .section-title p,
+    .news-copy p,
+    .news-copy a,
+    .text-link,
+    .rules-intro,
+    .rule-heading,
+    .rule-content,
+    .guide-step p,
+    .guide-step a,
+    .guide-note p,
+    .bottom-help p,
+    .reward-card p,
+    .reward-banner p,
+    .reward-banner a,
+    .news-wide p,
+    .news-wide a,
+    .about p,
+    .about a,
+    .footer p,
+    .footer-links,
+    .fineprint,
+    .term-label,
+    .terms button,
+    .article-meta,
+    .breadcrumbs,
+    .article-bottom,
+    .eyebrow,
+    .pill,
+    .tab,
+    .column-heading,
+    .product-row,
+    .product-price,
+    .description-column ul {
+        font-size: 14px;
+    }
+}
+
+/* телефон */
+@media (max-width: 600px) {
+    .news-grid,
+    .rewards-grid {
+        grid-template-columns: 1fr;
+    }
+
+    .hero h1 {
+        font-size: 28px;
+    }
+
+    .section-title h1,
+    .section-title h2 {
+        font-size: 26px;
+    }
+
+    .article-page h1 {
+        font-size: 28px;
+    }
+
+    .hero-players {
+        height: 260px;
+    }
+
+    .hero-back {
+        height: 200px;
+    }
+
+    .hero-front {
+        height: 250px;
+    }
+
+    .description-column .title-sm {
+        margin-left: 12px;
+        margin-right: 12px;
+    }
+
+    .description-column ul {
+        padding-left: 30px;
+        padding-right: 12px;
+    }
+
+    .logo {
+        font-size: 40px;
+    }
+
+    .modal {
+        padding: 28px 20px;
+    }
+
+    .article-bottom {
+        flex-direction: column;
+        gap: 12px;
+    }
 }
