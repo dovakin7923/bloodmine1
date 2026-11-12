@@ -1,38 +1,38 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
 <head>
   <meta charset="UTF-8">
-  <title>Главная</title>
-  <meta name="description" content="Лучший Minecraft сервер. Minecraft сервер, играть Minecraft, сервер Minecraft, лучший сервер.">
-  <meta name="keywords" content="minecraft, сервер, сервер майнкрафт, майнкрафт сервер, лучший сервер, донат, minecraft сервер">
-  <script src="assets/js/catalog.js"></script>
-  <script src="assets/js/widgets.js"></script>
-  <link rel="stylesheet" href="assets/css/components.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Награды игрокам — BloodMine</title>
+  <meta name="description" content="Награды BloodMine: шесть примеров коллекций от «Первого шага» до «Героя сезона». Откройте описание и найдите цель для нового приключения.">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='7' fill='%231e1006'/%3E%3Ctext x='16' y='22' font-size='16' font-family='Arial' font-weight='bold' text-anchor='middle' fill='%23ff1b04'%3EBM%3C/text%3E%3C/svg%3E">
   <link rel="stylesheet" href="assets/css/styles.css">
+  <script src="assets/js/app.js" defer></script>
 </head>
 <body>
-    <div class="header wrap">
-      <a class="logo" href="index.html">BM<span>BLOODMINE</span></a>
-      <div class="nav">
-        <a href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="rules.html">Правила</a><a href="rewards.html">Награды</a>
-        <a class="nav-light" href="how-to-play.html">Начать играть</a>
-      </div>
+    <a class="skip-link" href="#main">К основному содержимому</a>
+    <header class="header wrap">
+      <a class="logo" href="index.html" aria-label="BloodMine — на главную">BM<span>BLOODMINE</span></a>
+      <nav class="nav" aria-label="Основное меню">
+        <a href="index.html">Главная</a><a href="index.html#shop">Донат</a><a href="rules.html">Правила</a><a href="rewards.html" aria-current="page">Награды</a><a href="news.html">Новости</a><a class="nav-light" href="how-to-play.html">Начать играть</a>
+      </nav>
       <div class="header-note">Мир твоих приключений</div>
-    </div>
-    <div class="wrap inner-page"><div class="section-title"><span class="pill">Награды</span><h2>Выбери свою награду</h2><p>Открой описание и найди цель для нового приключения</p></div><div class="rewards-grid"><div class="reward-card"><span class="reward-number">01</span><img src="assets/images/chest.png"><h4>Первый шаг</h4><p>Небольшое начало большого приключения</p><button class="orange" onclick="showReward('Первый шаг')">Посмотреть</button></div>
-<div class="reward-card"><span class="reward-number">02</span><img src="assets/images/chest.png"><h4>Исследователь</h4><p>Для тех, кто не стоит на месте</p><button class="orange" onclick="showReward('Исследователь')">Посмотреть</button></div>
-<div class="reward-card"><span class="reward-number">03</span><img src="assets/images/chest.png"><h4>Строитель</h4><p>Каждый блок становится частью истории</p><button class="orange" onclick="showReward('Строитель')">Посмотреть</button></div>
-<div class="reward-card"><span class="reward-number">04</span><img src="assets/images/chest.png"><h4>Командный игрок</h4><p>Вместе интереснее, чем поодиночке</p><button class="orange" onclick="showReward('Командный игрок')">Посмотреть</button></div>
-<div class="reward-card"><span class="reward-number">05</span><img src="assets/images/chest.png"><h4>Коллекционер</h4><p>Самое интересное еще впереди</p><button class="orange" onclick="showReward('Коллекционер')">Посмотреть</button></div>
-<div class="reward-card"><span class="reward-number">06</span><img src="assets/images/chest.png"><h4>Герой сезона</h4><p>Впереди новые цели и открытия</p><button class="orange" onclick="showReward('Герой сезона')">Посмотреть</button></div></div><div class="reward-banner"><img src="assets/images/player.png"><div><h4>Любая история начинается с малого</h4><p>Изучай мир, собирай команду и придумывай свои цели.</p><a href="rules.html">Читать</a></div></div></div>
-    <div class="footer wrap">
-      <a class="logo small-logo" href="index.html">BM</a>
-      <div><div class="footer-links"><a href="rules.html">Правила</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a><a href="archive.html">Еще</a></div>
+    </header>
+    <main id="main">
+    <div class="wrap inner-page"><div class="section-title"><span class="pill">Награды</span><h1>Выбери свою награду</h1><p>Открой описание и найди цель для нового приключения</p></div><div class="rewards-grid"><div class="reward-card"><span class="reward-number">01</span><img src="assets/images/chest.png" alt="" decoding="async"><h2 class="title-sm">Первый шаг</h2><p>Небольшое начало большого приключения</p><button type="button" class="orange" data-reward="Первый шаг" aria-label="Посмотреть награду «Первый шаг»">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">02</span><img src="assets/images/chest.png" alt="" decoding="async"><h2 class="title-sm">Исследователь</h2><p>Для тех, кто не стоит на месте</p><button type="button" class="orange" data-reward="Исследователь" aria-label="Посмотреть награду «Исследователь»">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">03</span><img src="assets/images/chest.png" alt="" decoding="async"><h2 class="title-sm">Строитель</h2><p>Каждый блок становится частью истории</p><button type="button" class="orange" data-reward="Строитель" aria-label="Посмотреть награду «Строитель»">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">04</span><img src="assets/images/chest.png" alt="" loading="lazy" decoding="async"><h2 class="title-sm">Командный игрок</h2><p>Вместе интереснее, чем поодиночке</p><button type="button" class="orange" data-reward="Командный игрок" aria-label="Посмотреть награду «Командный игрок»">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">05</span><img src="assets/images/chest.png" alt="" loading="lazy" decoding="async"><h2 class="title-sm">Коллекционер</h2><p>Самое интересное еще впереди</p><button type="button" class="orange" data-reward="Коллекционер" aria-label="Посмотреть награду «Коллекционер»">Посмотреть</button></div>
+<div class="reward-card"><span class="reward-number">06</span><img src="assets/images/chest.png" alt="" loading="lazy" decoding="async"><h2 class="title-sm">Герой сезона</h2><p>Впереди новые цели и открытия</p><button type="button" class="orange" data-reward="Герой сезона" aria-label="Посмотреть награду «Герой сезона»">Посмотреть</button></div></div><div class="reward-banner"><img src="assets/images/player.png" alt="" loading="lazy" decoding="async"><div><h2 class="title-sm">Любая история начинается с малого</h2><p>Изучай мир, собирай команду и придумывай свои цели.</p><a href="rules.html">Читать правила проекта</a></div></div></div>
+    
+    </main>
+    <footer class="footer wrap">
+      <a class="logo small-logo" href="index.html" aria-label="BloodMine — на главную">BM</a>
+      <div><nav class="footer-links" aria-label="Ссылки в подвале"><a href="rules.html">Правила</a><a href="rewards.html">Награды</a><a href="news.html">Новости</a><a href="how-to-play.html">Как начать</a></nav>
       <p>BloodMine — демонстрационный макет. Подключение к серверу и оплата недоступны.</p>
       <p>Не является официальным продуктом Minecraft. Не одобрено Mojang или Microsoft и не связано с ними.</p></div>
-    </div>
-    <div class="overlay" id="dialog"><div class="modal"><div class="modal-close" onclick="closeDialog()">×</div><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button class="orange" onclick="closeDialog()">Понятно</button></div></div>
-    <div class="toast" id="toast"></div>
-    <script src="assets/js/app.js"></script><script src="assets/js/effects.js"></script>
+    </footer>
+    <div class="overlay" id="dialog"><div class="modal" role="dialog" aria-modal="true" aria-labelledby="dialog-title"><button type="button" class="modal-close" data-close aria-label="Закрыть окно">×</button><div class="pill">BloodMine</div><h2 id="dialog-title">Информация</h2><p id="dialog-text"></p><button type="button" class="orange" data-close>Понятно</button></div></div>
 </body>
 </html>
