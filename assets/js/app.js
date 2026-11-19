@@ -71,7 +71,7 @@
     $('preview-name').textContent = item.name;
     $('product-name').textContent = item.name;
     var img = $('preview-image');
-    img.src = state.category === 'cases' ? 'assets/images/chest.png' : 'assets/images/player.png';
+    img.src = state.category === 'cases' ? 'assets/images/chest.webp' : 'assets/images/player.webp';
     img.alt = 'Превью товара «' + item.name + '»';
     var ul = document.createElement('ul');
     if (state.category === 'ranks') {
